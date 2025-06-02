@@ -1,0 +1,67 @@
+# 🧠 Customer Churn Prediction with Machine Learning
+
+A complete machine learning pipeline to predict customer churn, extract business insights, and deploy an interactive web dashboard using Streamlit.
+
+---
+
+## 🔍 Problem Statement
+
+Customer churn is a key metric for business sustainability. This project predicts whether a customer is likely to churn using historical data from a telecom company. Early detection allows businesses to take corrective action and reduce churn rates.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python
+- Pandas, NumPy, Seaborn, Matplotlib
+- Scikit-learn (Logistic Regression, Random Forest)
+- Streamlit (App Deployment)
+- Jupyter Notebook
+- GitHub
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+- Overall churn rate: **26.5%**
+- Monthly contract customers churn more than long-term
+- Churn highly correlated with:
+  - Contract Type
+  - Customer Service Calls
+  - Electronic Billing
+  - Tenure & Internet Service Type
+
+![EDA Visual](images/eda_visual.png)
+
+---
+
+## 🔧 Feature Engineering
+
+- Label encoded categorical features
+- Binned tenure into categories (e.g., short, medium, long)
+- Engineered total services used
+- Handled missing values
+
+---
+
+## 🤖 Model Building & Evaluation
+
+| Model               | Accuracy | ROC AUC |
+|--------------------|----------|---------|
+| Logistic Regression| 79.8%    | 0.84    |
+| Random Forest      | 81.6%    | 0.85    |
+
+✅ Final model: **Random Forest**  
+✅ Balanced performance + feature interpretability
+
+---
+
+## 📌 Feature Importance
+
+```python
+Top 5 Features:
+1. Contract Type
+2. Tech Support
+3. Tenure
+4. Monthly Charges
+5. Payment Method
