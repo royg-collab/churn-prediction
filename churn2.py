@@ -44,8 +44,13 @@ data = pd.get_dummies(data)
 X = data.drop('Churn', axis=1)
 y = data['Churn']
 
+joblib.dump(X.columns.tolist(), 'model_columns.joblib')
+
 # Split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_test.to_csv("X_test.csv", index=False)
+y_test.to_csv("y_test.csv", index=False)
+
 
 # Model with class_weight='balanced'
 model = RandomForestClassifier(random_state=42, class_weight='balanced')
@@ -76,3 +81,10 @@ plt.show()
 # Classification report
 report = classification_report(y_test, y_pred)
 print("\nClassification Report:\n", report)
+
+# Save combined test results for Tableau
+X_test_copy = X_test.copy()
+X_test_copy['Actual_Churn'] = y_test.values
+X_test_copy['Predicted_Churn'] = y_pred
+X_test_copy.to_csv("churn_test_results.csv", index=False)
+print("Combined test results saved to churn_test_results.csv")
