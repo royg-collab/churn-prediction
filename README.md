@@ -24,6 +24,7 @@ Python
 ## 📈 Visualizations saved:
 - Confusion matrix.png
 - Correlation heatmap.png
+- churn_distribution.png
 
 ## 🔧 Feature Engineering
 - Dropped customerID
