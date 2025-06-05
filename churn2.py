@@ -17,10 +17,10 @@ print("\nChurn counts:\n", data['Churn'].value_counts())
 
 # Plot churn distribution
 plt.figure(figsize=(6,4))
-sns.countplot(x='Churn', data=data)
+sns.countplot(x='Churn', data=data, palette={'No': 'green', 'Yes': 'red'})
 plt.title("Churn Distribution")
 plt.savefig("churn_distribution.png")
-plt.close()
+plt.show()
 
 # Correlation heatmap
 numeric_cols = data.select_dtypes(include=['int64', 'float64']).columns
