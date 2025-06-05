@@ -84,7 +84,7 @@ This project uses a machine learning model to predict telecom customer churn and
 
 ## 📸 Preview
 
-![Customer Churn Prediction Dashboard](Dashboard 1.png)
+![Customer Churn Prediction Dashboard](Dashboard_1.png)
 
 ## 📁 Dataset
 - Source: [IBM Sample Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
@@ -95,4 +95,8 @@ This project uses a machine learning model to predict telecom customer churn and
 
 ## 📍 Live Demo
 - [View on Tableau Public](https://public.tableau.com/views/CustomerChurnDashboard_17490659112280/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
+🔗 Connect with Me
+If you like this project or have suggestions, feel free to ⭐ the repo or reach out on LinkedIn!
 
