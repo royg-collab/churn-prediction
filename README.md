@@ -1,13 +1,13 @@
 # Churn-prediction
 End-to-end machine learning project to predict customer churn using Random Forest. Includes EDA, model building, insights, Tableau dashboard, and business strategies to reduce churn.
 
-##🧠 Customer Churn Prediction with Machine Learning
+## 🧠 Customer Churn Prediction with Machine Learning
 A complete machine learning pipeline to predict customer churn, extract business insights, and save outputs like confusion matrix, EDA charts, and trained model artifacts for deployment or integration.
 
-##🔍 Problem Statement
+## 🔍 Problem Statement
 Customer churn is a key metric for business sustainability. This project predicts whether a customer is likely to churn using historical data from a telecom company. Early detection allows businesses to take corrective action and reduce churn rates.
 
-##🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 Python
 
 - Pandas, NumPy, Seaborn, Matplotlib
@@ -16,23 +16,23 @@ Python
 - Google Collab / Python Script
 - GitHub
 
-##📊 Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 - Overall churn rate: ~26.5%
 - Customers with month-to-month contracts churn more
 - Tenure, Internet service type, and contract type show strong correlation with churn
 
-##📈 Visualizations saved:
+## 📈 Visualizations saved:
 - Confusion matrix.png
 - Correlation heatmap.png
 
-##🔧 Feature Engineering
+## 🔧 Feature Engineering
 - Dropped customerID
 - Converted categorical features using get_dummies
 - Converted Churn column to binary (Yes = 1, No = 0)
 - Ensured consistent feature columns saved (model_columns.joblib)
 - Split into train-test (80-20)
 
-##🤖 Model Building & Evaluation
+## 🤖 Model Building & Evaluation
 Model	Accuracy
 - Random Forest- 80%
 
@@ -40,22 +40,22 @@ Model	Accuracy
 ✅ Class imbalance handled using class_weight='balanced'
 ✅ Trained model saved as churn_model.joblib
 
-##📌 Confusion Matrix
+## 📌 Confusion Matrix
 
 Also saved in repo as Confusion matrix.png.
 
-##📁 Output Artifacts
+## 📁 Output Artifacts
 - churn_model.joblib → Trained ML model
 - model_columns.joblib → Feature list for inference
 - X_test.csv, y_test.csv → Testing data for validation
 = .png → Visualizations for EDA and evaluatio
 
-##📈 Business Insights
+## 📈 Business Insights
 - Customers with short tenure are much more likely to churn.
 - Contract Type, Tech Support, and Monthly Charges are major indicators.
 - Targeted offers or improved service in those areas could improve retention.
 
-##🚀 Next Steps
+## 🚀 Next Steps
 Add Streamlit dashboard for prediction
 Use SHAP or LIME for interpretability
 Schedule retraining with latest data
