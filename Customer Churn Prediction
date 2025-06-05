@@ -1,67 +1,60 @@
-# 🧠 Customer Churn Prediction with Machine Learning
+🧠 Customer Churn Prediction with Machine Learning
+A complete machine learning pipeline to predict customer churn, extract business insights, and save outputs like confusion matrix, EDA charts, and trained model artifacts for deployment or integration.
 
-A complete machine learning pipeline to predict customer churn, extract business insights, and deploy an interactive web dashboard using Streamlit.
-
----
-
-## 🔍 Problem Statement
-
+🔍 Problem Statement
 Customer churn is a key metric for business sustainability. This project predicts whether a customer is likely to churn using historical data from a telecom company. Early detection allows businesses to take corrective action and reduce churn rates.
 
----
+🛠️ Tools & Technologies
+Python
 
-## 🛠️ Tools & Technologies
+Pandas, NumPy, Seaborn, Matplotlib
+Scikit-learn (Random Forest Classifier)
+Joblib (Model Persistence)
+Google Collab / Python Script
+GitHub
 
-- Python
-- Pandas, NumPy, Seaborn, Matplotlib
-- Scikit-learn (Logistic Regression, Random Forest)
-- Streamlit (App Deployment)
-- Jupyter Notebook
-- GitHub
+📊 Exploratory Data Analysis (EDA)
+Overall churn rate: ~26.5%
+Customers with month-to-month contracts churn more
+Tenure, Internet service type, and contract type show strong correlation with churn
 
----
+📈 Visualizations saved:
+churn_distribution.png
+correlation_heatmap.png
 
-## 📊 Exploratory Data Analysis (EDA)
+🔧 Feature Engineering
+Dropped customerID
+Converted categorical features using get_dummies
+Converted Churn column to binary (Yes = 1, No = 0)
+Ensured consistent feature columns saved (model_columns.joblib)
+Split into train-test (80-20)
 
-- Overall churn rate: **26.5%**
-- Monthly contract customers churn more than long-term
-- Churn highly correlated with:
-  - Contract Type
-  - Customer Service Calls
-  - Electronic Billing
-  - Tenure & Internet Service Type
+🤖 Model Building & Evaluation
+Model	Accuracy
+Random Forest- 80%
 
-![EDA Visual](images/eda_visual.png)
+✅ Final model: Random Forest
+✅ Class imbalance handled using class_weight='balanced'
+✅ Trained model saved as churn_model.joblib
 
----
+📌 Confusion Matrix
 
-## 🔧 Feature Engineering
+Also saved in repo as confusion_matrix.png.
 
-- Label encoded categorical features
-- Binned tenure into categories (e.g., short, medium, long)
-- Engineered total services used
-- Handled missing values
+📁 Output Artifacts
+churn_model.joblib → Trained ML model
+model_columns.joblib → Feature list for inference
+X_test.csv, y_test.csv → Testing data for validation
+.png → Visualizations for EDA and evaluation
 
----
+📈 Business Insights
+Customers with short tenure are much more likely to churn.
+Contract Type, Tech Support, and Monthly Charges are major indicators.
+Targeted offers or improved service in those areas could improve retention.
 
-## 🤖 Model Building & Evaluation
+🚀 Next Steps
+Add Streamlit dashboard for prediction
+Use SHAP or LIME for interpretability
+Schedule retraining with latest data
+Deploy model as an API or web app
 
-| Model               | Accuracy | ROC AUC |
-|--------------------|----------|---------|
-| Logistic Regression| 79.8%    | 0.84    |
-| Random Forest      | 81.6%    | 0.85    |
-
-✅ Final model: **Random Forest**  
-✅ Balanced performance + feature interpretability
-
----
-
-## 📌 Feature Importance
-
-```python
-Top 5 Features:
-1. Contract Type
-2. Tech Support
-3. Tenure
-4. Monthly Charges
-5. Payment Method
