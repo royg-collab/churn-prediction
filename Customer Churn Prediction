@@ -7,31 +7,31 @@ Customer churn is a key metric for business sustainability. This project predict
 🛠️ Tools & Technologies
 Python
 
-Pandas, NumPy, Seaborn, Matplotlib
-Scikit-learn (Random Forest Classifier)
-Joblib (Model Persistence)
-Google Collab / Python Script
-GitHub
+- Pandas, NumPy, Seaborn, Matplotlib
+- Scikit-learn (Random Forest Classifier)
+- Joblib (Model Persistence)
+- Google Collab / Python Script
+- GitHub
 
 📊 Exploratory Data Analysis (EDA)
-Overall churn rate: ~26.5%
-Customers with month-to-month contracts churn more
-Tenure, Internet service type, and contract type show strong correlation with churn
+- Overall churn rate: ~26.5%
+- Customers with month-to-month contracts churn more
+- Tenure, Internet service type, and contract type show strong correlation with churn
 
 📈 Visualizations saved:
-churn_distribution.png
-correlation_heatmap.png
+- Confusion matrix.png
+- Correlation heatmap.png
 
 🔧 Feature Engineering
-Dropped customerID
-Converted categorical features using get_dummies
-Converted Churn column to binary (Yes = 1, No = 0)
-Ensured consistent feature columns saved (model_columns.joblib)
-Split into train-test (80-20)
+- Dropped customerID
+- Converted categorical features using get_dummies
+- Converted Churn column to binary (Yes = 1, No = 0)
+- Ensured consistent feature columns saved (model_columns.joblib)
+- Split into train-test (80-20)
 
 🤖 Model Building & Evaluation
 Model	Accuracy
-Random Forest- 80%
+- Random Forest- 80%
 
 ✅ Final model: Random Forest
 ✅ Class imbalance handled using class_weight='balanced'
@@ -39,18 +39,18 @@ Random Forest- 80%
 
 📌 Confusion Matrix
 
-Also saved in repo as confusion_matrix.png.
+Also saved in repo as Confusion matrix.png.
 
 📁 Output Artifacts
-churn_model.joblib → Trained ML model
-model_columns.joblib → Feature list for inference
-X_test.csv, y_test.csv → Testing data for validation
-.png → Visualizations for EDA and evaluation
+- churn_model.joblib → Trained ML model
+- model_columns.joblib → Feature list for inference
+- X_test.csv, y_test.csv → Testing data for validation
+= .png → Visualizations for EDA and evaluatio
 
 📈 Business Insights
-Customers with short tenure are much more likely to churn.
-Contract Type, Tech Support, and Monthly Charges are major indicators.
-Targeted offers or improved service in those areas could improve retention.
+- Customers with short tenure are much more likely to churn.
+- Contract Type, Tech Support, and Monthly Charges are major indicators.
+- Targeted offers or improved service in those areas could improve retention.
 
 🚀 Next Steps
 Add Streamlit dashboard for prediction
