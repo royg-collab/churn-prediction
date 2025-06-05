@@ -1,7 +1,7 @@
-# churn-prediction
+# Churn-prediction
 End-to-end machine learning project to predict customer churn using Random Forest. Includes EDA, model building, insights, Tableau dashboard, and business strategies to reduce churn.
 
-🧠 Customer Churn Prediction with Machine Learning
+##🧠 Customer Churn Prediction with Machine Learning
 A complete machine learning pipeline to predict customer churn, extract business insights, and save outputs like confusion matrix, EDA charts, and trained model artifacts for deployment or integration.
 
 🔍 Problem Statement
@@ -21,7 +21,7 @@ Python
 - Customers with month-to-month contracts churn more
 - Tenure, Internet service type, and contract type show strong correlation with churn
 
-📈 Visualizations saved:
+##📈 Visualizations saved:
 - Confusion matrix.png
 - Correlation heatmap.png
 
@@ -84,7 +84,7 @@ This project uses a machine learning model to predict telecom customer churn and
 
 ## 📸 Preview
 
-![Dashboard](images/dashboard_screenshot.png)
+![Customer Churn Prediction Dashboard](Dashboard 1.png)
 
 ## 📁 Dataset
 - Source: [IBM Sample Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
